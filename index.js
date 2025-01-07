@@ -15,7 +15,7 @@ dotenv.config();
 ConnectDB();
 
 const numCPUs = os.cpus().length;
-
+console.log('numCPUs: ', numCPUs);
 if (cluster.isPrimary) {
     console.log(`Master process ${process.pid} is running`);
     console.log(`Forking ${numCPUs} workers...`);
