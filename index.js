@@ -9,6 +9,9 @@ import ConnectDB from './connectdb.js'
 import auth from './auth.js'
 import multer from 'multer'
 import { createPost,getPosts,gethomepost,addComment,addLike } from './services.js'
+import os from 'os'
+
+console.log(os.cpus().length)
 
 dotenv.config();
 ConnectDB()
